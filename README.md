@@ -6,3 +6,17 @@
     A data logger made with LOR<br/><br/>Made by Raiyaxi Ziaoi
 </h2></div>
 <br>
+
+Usage:
+
+```
+var log = new Register (
+        "log.txt",
+        "log",
+        "LOG: ",
+        "dd-MM-yyyy HH:mm:ss"
+    );
+log.log (
+    "Hello World"
+);
+```

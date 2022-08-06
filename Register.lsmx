@@ -37,15 +37,3 @@ fn void log(String toLog) {
         );
     }
 }
-
-fn main() {
-    var log = new Register (
-        "log.txt", 
-        "log", 
-        "LOG: ",
-        "dd-MM-yyyy HH:mm:ss"
-    );
-    log.log (
-        "Hello World"
-    );
-}

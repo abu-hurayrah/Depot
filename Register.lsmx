@@ -3,17 +3,17 @@ private static String filepath = "", type = "", prefix = "", format = "";
 private static bool usesDate = false;
 
 _construct Register(String filepath, String type, String prefix) {
-    this.filepath = filepath;
-    this.type = type;
-    this.prefix = prefix;
+    $.filepath = filepath;
+    $.type = type;
+    $.prefix = prefix;
 }
 
 _construct Register(String filepath, String type, String prefix, String format) {
-    this.filepath = filepath;
-    this.type = type;
-    this.prefix = prefix;
+    $.filepath = filepath;
+    $.type = type;
+    $.prefix = prefix;
     usesDate = true;
-    this.format = format;
+    $.format = format;
 }
 
 fn void log(String toLog) {

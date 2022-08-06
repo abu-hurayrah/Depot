@@ -9,7 +9,7 @@
 
 Usage:
 
-```
+```java
 var log = new Register (
         "log.txt",
         "log",

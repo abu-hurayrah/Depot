@@ -1,0 +1,12 @@
+
+private static boolean match(String str, String regex) {
+    Pattern pattern = Pattern.compile(regex);
+    Matcher matcher = pattern.matcher(str);
+    return matcher.find();
+}
+
+private static String replace(String str, String replace, String regex) {
+    Pattern p = Pattern.compile(regex);
+    Matcher m = p.matcher(str);
+    return m.replaceAll(replcae);
+}

@@ -1,0 +1,36 @@
+
+private static String read(String filePath) {
+    String out = "";
+    try {
+        var path = Path.of(filePath);
+        out = Files.readString(path);
+    } catch (IOException e) { e.printStackTrace(); }
+    return out;
+}
+
+private static void create(String filePath, boolean err) {
+    try {
+        var file = new File(filePath);
+        if (file.createNewFile()) {} else {
+            if (err) { System.out.println(filePath + " already exists."); }
+        }
+    } catch (IOException e) {
+        System.out.println(filePath + " could not be created.");
+        e.printStackTrace();
+    }
+} 
+
+private static void write(String filePath, String data) {
+    try {
+        var path = Path.of(filePath);
+        Files.writeString(path, data);
+    } catch (IOException e) { e.printStackTrace(); }
+}
+
+private static void append(String filePath, String data) {
+    try {
+        Files.write(Paths.get(filePath), data.getBytes(), StandardOpenOption.APPEND);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}

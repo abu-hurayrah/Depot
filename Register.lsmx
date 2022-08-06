@@ -1,0 +1,51 @@
+
+private static String filepath = "", type = "", prefix = "", format = "";
+private static bool usesDate = false;
+
+_construct Register(String filepath, String type, String prefix) {
+    this.filepath = filepath;
+    this.type = type;
+    this.prefix = prefix;
+}
+
+_construct Register(String filepath, String type, String prefix, String format) {
+    this.filepath = filepath;
+    this.type = type;
+    this.prefix = prefix;
+    usesDate = true;
+    this.format = format;
+}
+
+fn void log(String toLog) {
+    create (
+        filepath, 
+        false
+    );
+    if (usesDate) {
+        try {
+            append (
+                filepath, 
+                datetime(format) + ": " + prefix + toLog + "\n"
+            );
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    } else {
+        append (
+            filepath,
+            prefix + toLog + "\n"
+        );
+    }
+}
+
+fn main() {
+    var log = new Register (
+        "log.txt", 
+        "log", 
+        "LOG: ",
+        "dd-MM-yyyy HH:mm:ss"
+    );
+    log.log (
+        "Hello World"
+    );
+}

@@ -1,6 +1,6 @@
 <img src="https://i.imgur.com/lRzzpEU.png"></img>
 
-# Register
+# Depot
 
 <div align="center"><h2><br/><br/>
     A data logger made with LOR<br/><br/>Made by Raiyaxi Ziaoi
@@ -10,7 +10,7 @@
 Usage:
 
 ```java
-var log = new Register (
+var log = new Depot (
         "log.txt",
         "log",
         "LOG: ",

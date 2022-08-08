@@ -2,13 +2,13 @@
 private static String filepath = "", type = "", prefix = "", format = "";
 private static bool usesDate = false;
 
-_construct Register(String filepath, String type, String prefix) {
+_construct Depot(String filepath, String type, String prefix) {
     $.filepath = filepath;
     $.type = type;
     $.prefix = prefix;
 }
 
-_construct Register(String filepath, String type, String prefix, String format) {
+_construct Depot(String filepath, String type, String prefix, String format) {
     $.filepath = filepath;
     $.type = type;
     $.prefix = prefix;

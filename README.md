@@ -3,7 +3,7 @@
 # Depot
 
 <div align="center"><h2><br/><br/>
-    A data logger made with LOR<br/><br/>Made by Raiyaxi Ziaoi
+    A data logger made with ALNOOR<br/><br/>Made by Raiyaxi Ziaoi
 </h2></div>
 <br>
 

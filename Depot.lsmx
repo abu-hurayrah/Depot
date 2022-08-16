@@ -1,6 +1,6 @@
 
-private static String filepath = "", type = "", prefix = "", format = "";
-private static bool usesDate = false;
+#def String filepath = "", type = "", prefix = "", format = "";
+#def bool usesDate = false;
 
 _construct Depot(String filepath, String type, String prefix) {
     $.filepath = filepath;

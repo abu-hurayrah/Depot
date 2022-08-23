@@ -1,0 +1,29 @@
+
+class LGraph extends JPanel {
+    
+    private double[] points;
+    private int width, height;
+    private frame = new JFrame();
+
+    public LGraph(double[] points, int width, int height) {
+        this.points = points;
+        this.width = width;
+        this.height = height;
+    }
+
+    public void paintComponent(Graphics g) {
+        for (double d : points) g.drawLine(points, points, points, points);
+    }
+    
+    public static void display() {
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setBackground(Color.white);
+        frame.setSize(width, height);
+        frame.add(new LGraph(points, width, height));
+        frame.setVisible(true);
+    }
+
+    public static dispose() {
+        frame.dispose();
+    }
+}

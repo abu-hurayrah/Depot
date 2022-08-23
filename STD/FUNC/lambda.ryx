@@ -1,0 +1,8 @@
+interface Function<X> {
+    X call(X[] x);
+}
+
+
+interface Void<X> {
+    void call(X[] x);
+}
